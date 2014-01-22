@@ -334,12 +334,17 @@ Private properties should be declared in class extensions (anonymous categories)
 
 ## Image Naming
 
-Image names should be named consistently to preserve organization and developer sanity. They should be named as one camel case string with a description of their purpose, followed by the un-prefixed name of the class or property they are customizing (if there is one), followed by a further description of color and/or placement, and finally their state.
+* [ios-asset-names](https://github.com/dkhamsing/ios-asset-names)
+* The asset name describes the icon, not the function of the icon. Because same icon can be used for different functions.
+* Use lower case
+* No spaces or special characters (use dashes)
 
 **For example:**
-
-* `RefreshBarButtonItem` / `RefreshBarButtonItem@2x` and `RefreshBarButtonItemSelected` / `RefreshBarButtonItemSelected@2x`
-* `ArticleNavigationBarWhite` / `ArticleNavigationBarWhite@2x` and `ArticleNavigationBarBlackSelected` / `ArticleNavigationBarBlackSelected@2x`.
+```
+ss-rack-minus.png 
+ss-top-bars.png 
+ss-tree-check.png
+```
 
 Images that are used for a similar purpose should be grouped in respective groups in an Images folder.
 
